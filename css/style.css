@@ -43,42 +43,45 @@ html, body {
     display: flex;
     list-style: none;
     visibility: hidden;
+    color: white;
 }
-.nav__links-oncick {
+.nav__links-click {
     display: flex;
+    align-items: center;
+    justify-content: space-around;
     list-style: none;
     position: absolute;
     flex-direction: column;
     background-color: white;
-    width: 200px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     visibility: visible;
     border-radius: 6px;
     top: 50%;
     left: 50%;
     margin-right: -50%;
-    transform: translate(-50%, -70%)
+    transform: translate(-50%, -70%);
+    padding-inline-start: 0
 }
 
-.nav__link {
-    color: white;
+
+.nav__link-item {
     text-decoration: none;
     padding: 0 2rem;
+    color: white;
+    padding-top: 5rem;
 }
 
 .nav__link-click {
-    color: hsl(212, 27%, 19%) ;
+    color: hsl(232, 10%, 55%);
     text-decoration: none;
-    padding: 0 0;
     text-align: center;
-
 }
 
 .nav__header {
     color: white;
     padding: 1rem;
     font-family: 'Fraunces', serif;
-    ;
     font-weight: 900;
 }
 
@@ -91,16 +94,23 @@ html, body {
     text-transform: uppercase;
     cursor: pointer;
     font-family: 'Fraunces', serif;
-    ;
     font-weight: 900;
     color: hsl(212, 27%, 19%);
     visibility: hidden;
+    margin-top: -2rem;
 }
+
 
 .nav_contact:hover {
     color: white;
     background-color: rgb(60, 188, 251);
 }
+.nav_contact-click {
+    background-color: hsl(51, 100%, 49%);
+    visibility: visible;
+
+}
+
 .button_menu {
     color: white; 
     background-color: transparent;
@@ -113,8 +123,12 @@ html, body {
     color: white;
     padding: 0.5rem;
     font-size: 1.5rem;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
     
+}
+.button_menu-icon-click {
+opacity: 0.5;
 }
 
 .hero__header {
@@ -131,9 +145,13 @@ html, body {
     top: 50%;
     left: 50%;
     margin-right: -50%;
-    transform: translate(-50%, -20%)
+    transform: translate(-50%, 0)
 }
 
+.arrow-click {
+    visibility: hidden;
+
+}
 
 @media (min-width: 1024px)
 {
@@ -159,6 +177,7 @@ html, body {
     }
     .nav__links {visibility: visible;}
     .nav_contact {visibility: visible;}
+    .button_menu-icon {visibility: hidden;}
 
 }
 
