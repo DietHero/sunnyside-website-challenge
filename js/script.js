@@ -1,7 +1,7 @@
 'use strick'
 var button = document.querySelector(".button_menu")
 var navlinks = document.querySelector('.nav__links')
-const navlink = document.querySelectorAll('.nav__link-item')
+var navlink = document.querySelectorAll('.nav__link-item')
 var contact = document.querySelector('.nav_contact')
 var arrow = document.querySelector('.arrow')
 var button = document.querySelector('.button_menu-icon')
